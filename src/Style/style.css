@@ -1,0 +1,163 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #ededf2;
+}
+
+header {
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.logo {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div.logo h1 {
+  font-size: 3rem;
+  font-family: "Satisfy", cursive;
+}
+header div.menu_bar {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div.menu_bar nav ul {
+  display: flex;
+  list-style: none;
+}
+header div.menu_bar nav ul li {
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  margin-bottom: 30px;
+}
+section div.fotoPerfil {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section div.fotoPerfil img {
+  height: 400px;
+  width: 70%;
+  border-radius: 100%;
+  margin-bottom: 60px;
+}
+section div.icons {
+  display: flex;
+  flex-direction: row;
+}
+section div.icons img.icon {
+  border-radius: 0;
+  margin-right: 50px;
+  height: 32px;
+  width: 32px;
+}
+section div.textPerfil {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  margin-right: 150px;
+}
+section div.textPerfil div.titulo {
+  height: 80px;
+  font-size: 1.9rem;
+}
+section div.textPerfil p {
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: #a6aec1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main div.skills div.titulo {
+  height: 100px;
+  margin-bottom: 40px;
+}
+main div.skills div.titulo h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 4rem;
+}
+main div.boxSkills {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main div.boxSkills div.skill {
+  height: 90px;
+  width: 400px;
+  margin-right: 40px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(0);
+  transition: 0.3s;
+}
+main div.boxSkills div.skill div.geral {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div.boxSkills div.skill div.geral img {
+  height: 60px;
+}
+main div.boxSkills div.skill div.text {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div.boxSkills div.skill div.text p {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main div.boxSkills div.skill:hover {
+  background-color: #6c788e;
+  transform: translateX(20px);
+  transition: 0.3s;
+  color: #FFF;
+}/*# sourceMappingURL=style.css.map */

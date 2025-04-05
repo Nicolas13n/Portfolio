@@ -1,0 +1,15 @@
+@mixin flexCenter($junstify-content){
+    display: flex;
+    align-items: center;
+    justify-content: $junstify-content;
+}
+
+@mixin flexBody($align-items){
+    display: flex;
+    align-self: $align-items;
+}
+
+@mixin flexElement(){
+    display: flex;
+    justify-content: center;
+}

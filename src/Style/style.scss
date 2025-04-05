@@ -1,0 +1,205 @@
+@import 'color';
+@import 'função';
+@import 'fontTamanho';
+@import url("@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include flexBody(center);
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: $colorFundo;
+}
+
+header {
+    height: 12%;
+    width: 100%;
+    @include flexCenter(space-between);
+
+    div{
+        &.logo{
+            height: 100%;
+            width: 15%;
+            @include flexCenter(center);
+            
+            h1{
+                font-size: $tamanhoGrande;
+                font-family:"Satisfy", cursive;
+            }
+        }
+
+    }
+
+    div{
+        &.menu_bar{
+            height: 100%;
+            width: 30%;
+
+            @include flexCenter(center);
+            nav{
+                ul{
+                    display: flex;
+                    list-style: none;
+
+                    li{
+                        padding: 20px;
+                        font-size: $tamanhoMedio;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flexCenter(space-between);
+    padding: 4rem;
+    margin-bottom: 30px;
+    div{
+
+        &.fotoPerfil{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            img{
+                height: 400px;
+                width: 70%;
+                border-radius: 100%;
+                margin-bottom: 60px;
+                
+            }
+        }
+    }
+
+    div{
+        &.icons{
+            display: flex;
+            flex-direction: row;
+            img{
+
+                &.icon{
+                    border-radius: 0;
+                    margin-right: 50px;
+                    height: 32px;
+                    width: 32px;
+                }
+            } 
+        }
+    }
+
+    div{
+        &.textPerfil{
+            height: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 600px;
+            margin-right:150px ;
+
+            div{
+                &.titulo{
+                    height: 80px;
+                    font-size: 1.9rem;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    }
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: $colorElement1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        &.skills{
+            div{
+                
+                &.titulo{
+                    height: 100px;
+                    margin-bottom: 40px;
+                    h1{
+                        text-align: center;
+                        margin-top: 20px;
+                        font-size: 4rem;
+                    }
+                }
+
+            }
+        }
+    }
+    div{
+        &.boxSkills{
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            div{
+                &.skill{
+                    height: 90px;
+                    width: 400px;
+                    margin-right: 40px;
+                    border: 2px solid;
+                    border-radius: 10px;
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transform: translateX(0);
+                    transition: 0.3s;
+                    div{
+                        &.geral{
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                height: 60px;
+                            }
+                        }
+                    }
+                    div{
+
+                        &.text{
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            p{
+                                font-size: 1.5rem;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            }
+                        }
+                    }
+                    
+                }
+                &.skill:hover{
+                    background-color: $colorElement2;
+                    transform: translateX(20px);
+                    transition: 0.3s;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
