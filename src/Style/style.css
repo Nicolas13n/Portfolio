@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 body {
@@ -44,8 +45,26 @@ header div.menu_bar nav ul {
   list-style: none;
 }
 header div.menu_bar nav ul li {
-  padding: 20px;
+  margin-right: 40px;
   font-size: 1.3rem;
+  position: relative;
+  transition: 0.5s ease;
+}
+header div.menu_bar nav ul li::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s;
+  background-color: #000;
+  z-index: 1;
+  transform: translateX(-100%);
+}
+header div.menu_bar nav ul li:hover::before {
+  transform: translateX(0);
+  width: 100%;
 }
 
 section {
